@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>public</title>
+  </head>
+  <body>
+    <h1>this is publically available</h1>
+    {{#isAuthenticated}}
+    <a href="/logout">logout</a>
+    {{/isAuthenticated}}
+    {{^isAuthenticated}}
+    <a href="/login">login</a>
+    {{/isAuthenticated}}
+
+  </body>
+</html>
